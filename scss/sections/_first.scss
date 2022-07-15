@@ -1,0 +1,142 @@
+.first {
+	padding: 50px 0 0;
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__content {
+		flex: 0 1 530px;
+		& + * {
+			margin-left: 31px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 64px;
+		line-height: calc(77px / 64px * 100%);
+		& + * {
+			margin-top: 5px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 32px;
+		line-height: calc(39px / 32px * 100%);
+		color: #6f6f6f;
+		& + * {
+			margin-top: 60px;
+		}
+	}
+
+	&__descr {
+		max-width: 420px;
+		& + * {
+			margin-top: 80px;
+		}
+	}
+
+	&__text {
+		& + * {
+			margin-top: 20px;
+		}
+	}
+
+	&__link {
+		font-size: 20px;
+		line-height: calc(24px / 20px * 100%);
+		letter-spacing: 1.1rem;
+		text-transform: uppercase;
+		color: #fff;
+		background: #000;
+		padding: 28px 81px;
+		text-align: center;
+		transition: all 0.3s;
+		&:hover {
+			background: #ff4040;
+		}
+	}
+
+	&__column {
+		max-width: 630px;
+	}
+
+	&__slider {
+		& + * {
+			margin-top: 25px;
+		}
+		.slick-dots {
+			position: absolute;
+			right: 0;
+			top: 52px;
+			li {
+				font-size: 0; //чтобы пропали цифры
+				background: #131313;
+				border-radius: 7px;
+				width: 5px;
+				height: 25px;
+				cursor: pointer;
+				transition: all 0.3s;
+				& + * {
+					margin-top: 10px;
+				}
+				&:hover {
+					background: #ff4040;
+				}
+			}
+			.slick-active {
+				background: #ff4040;
+			}
+		}
+	}
+
+	&__specs {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+.first-slider {
+	&__slide {
+	}
+
+	&__img {
+	}
+}
+.specs {
+	&__item {
+		min-width: 160px;
+		text-align: center;
+	}
+
+	&__title {
+		font-weight: 700;
+		text-transform: uppercase;
+		& + * {
+			margin-top: 5px;
+		}
+	}
+
+	&__text {
+		font-size: 12px;
+		text-transform: lowercase;
+		min-height: 31px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.slick-slide {
+	opacity: 0;
+	transition: opacity 1s ease-out;
+}
+
+.slick-active {
+	opacity: 1 !important;
+	transition: opacity 1s ease-in;
+}
+
+.slick-cloned {
+	opacity: 0.3;
+}

@@ -1,0 +1,39 @@
+.header {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+		margin-right: 73px;
+	}
+}
+.logo {
+	&__img {
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		& + * {
+			margin-right: 10px;
+		}
+	}
+
+	&__link {
+		text-transform: uppercase;
+		padding: 42px 20px;
+		transition: all 0.3s;
+		color: #131313;
+		&:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+}

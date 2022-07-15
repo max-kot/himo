@@ -1,0 +1,22 @@
+/*--- Inter Font ---*/
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inte/Inter-Regular.eot");
+	src: url("../fonts/Inte/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Inte/Inter-Regular.woff2") format("woff2"), url("../fonts/Inte/Inter-Regular.woff") format("woff"),
+		url("../fonts/Inte/Inter-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inte/Inter-Bold.eot");
+	src: url("../fonts/Inte/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Inte/Inter-Bold.woff2") format("woff2"), url("../fonts/Inte/Inter-Bold.woff") format("woff"),
+		url("../fonts/Inte/Inter-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

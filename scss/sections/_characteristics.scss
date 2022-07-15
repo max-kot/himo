@@ -1,0 +1,49 @@
+.characteristic {
+	padding-bottom: 150px;
+	&__body {
+	}
+
+	&__title {
+		& + * {
+			margin-top: 40px;
+		}
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	&__tables {
+		flex: 0 1 570px;
+		& + * {
+			margin-left: 60px;
+		}
+	}
+
+	&__table {
+		width: 100%; //растягиваем таблицу на 100%
+		border-collapse: collapse; //чтобы убрать зазоры между ячеками
+	}
+
+	&__image {
+	}
+}
+.specs-table {
+	&__row {
+	}
+	&__title {
+		background: #131313;
+		color: #fff;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding: 3px 2px;
+	}
+
+	&__column {
+		width: 285px;
+		border: 1px solid #000;
+		vertical-align: top;
+		padding: 3px 0px;
+	}
+}
