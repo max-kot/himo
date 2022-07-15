@@ -1,0 +1,125 @@
+.order {
+	padding-bottom: 100px;
+	&__body {
+		position: relative;
+	}
+
+	&__title {
+		& + * {
+			margin-top: 40px;
+		}
+	}
+	&__text {
+		max-width: 298px;
+		& + * {
+			margin-top: 29px;
+		}
+	}
+	&__form {
+	}
+}
+.form {
+	max-width: 420px;
+	display: flex;
+	flex-direction: column;
+	&__input {
+		display: block;
+		padding: 10px 0;
+		border-bottom: 1px solid #131313;
+
+		&::placeholder {
+			color: #6f6f6f;
+			opacity: 0.5;
+		}
+		& + * {
+			margin-top: 20px;
+		}
+	}
+
+	&__text {
+		color: #6f6f6f;
+		opacity: 0.5;
+		& + * {
+			margin-top: 10px;
+		}
+	}
+
+	&__label-box {
+		display: flex;
+		& + * {
+			margin-top: 50px;
+		}
+	}
+
+	&__label {
+		& + * {
+			margin-left: 23px;
+		}
+	}
+
+	&__radio {
+		//отрубаем input:radio
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		&:checked + .form__bike {
+			//чтобы при нажатии на imput появлялся блок с картинкой
+			display: block;
+		}
+	}
+	&__radio-btn {
+		width: 80px;
+		height: 12px;
+		border-radius: 30px;
+	}
+	&__radio-btn--grey {
+		background: #6f6f6f;
+	}
+	&__radio-btn--white {
+		background: #fff;
+		border: 1px solid #6f6f6f;
+	}
+
+	&__radio-btn--red {
+		background: #ff4040;
+	}
+
+	&__bike {
+		display: none;
+		position: absolute;
+		top: 40px;
+		right: 0;
+	}
+
+	&__price {
+		font-size: 32px;
+		line-height: calc(39px / 32px * 100%);
+		border: 1px solid #ff4040;
+		width: 221px;
+		height: 100px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: -80px;
+		&::after {
+			content: "";
+			position: absolute;
+			border: 1px solid #ff4040;
+			width: 221px;
+			height: 100px;
+			border-radius: 50%;
+			top: 10px;
+		}
+	}
+
+	&__bike-img {
+	}
+
+	&__btn {
+	}
+}

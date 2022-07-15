@@ -11,6 +11,8 @@
 
 	&__content {
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__tables {
@@ -22,13 +24,21 @@
 
 	&__table {
 		width: 100%; //растягиваем таблицу на 100%
-		border-collapse: collapse; //чтобы убрать зазоры между ячеками
+		//border-collapse: collapse; //чтобы убрать зазоры между ячеками
+		& + * {
+			margin-top: 30px;
+		}
 	}
 
 	&__image {
+		flex: 0 1 570px;
 	}
 }
 .specs-table {
+	&__head {
+	}
+	&__body {
+	}
 	&__row {
 	}
 	&__title {
@@ -42,8 +52,7 @@
 
 	&__column {
 		width: 285px;
-		border: 1px solid #000;
 		vertical-align: top;
-		padding: 3px 0px;
+		padding: 2.5px 0px;
 	}
 }
