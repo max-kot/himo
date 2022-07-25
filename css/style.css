@@ -461,3 +461,63 @@ body {
   border-radius: 50%;
   top: 10px;
 }
+.footer {
+  padding: 21px 0;
+  background: #131313;
+}
+.footer__body {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-policy__link {
+  font-size: 12px;
+  line-height: 125%;
+  text-transform: lowercase;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.footer-policy__link:hover {
+  color: #ff4040;
+}
+
+.footer-social__list {
+  display: flex;
+  gap: 28px;
+}
+.footer-social__link path {
+  transition: fill 0.3s;
+}
+.footer-social__link:hover path {
+  fill: #ff4040;
+}
+
+.footer-contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contact__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s;
+}
+.footer-contact__link:hover {
+  color: #ff4040;
+}
+.footer-contact__link--phone::before {
+  content: "";
+  display: block;
+  background: url("../img/footer/phone.svg") center/cover no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.footer-contact__link--mail::before {
+  content: "";
+  display: block;
+  background: url("../img/footer/mail.svg") center/cover no-repeat;
+  width: 24px;
+  height: 24px;
+}
