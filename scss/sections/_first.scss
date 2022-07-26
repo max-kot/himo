@@ -4,12 +4,25 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		@media (max-width: 992px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 	}
 
 	&__content {
 		flex: 0 1 530px;
 		& + * {
 			margin-left: 31px;
+			@media (max-width: 1090px) {
+				margin-left: 0;
+			}
+		}
+		@media (max-width: 1090px) {
+			flex: 0 1 45%;
+		}
+		@media (max-width: 992px) {
+			flex: 0 1 100%;
 		}
 	}
 
@@ -20,6 +33,9 @@
 		& + * {
 			margin-top: 5px;
 		}
+		@media (max-width: 768px) {
+			font-size: 44px;
+		}
 	}
 
 	&__subtitle {
@@ -28,6 +44,9 @@
 		color: #6f6f6f;
 		& + * {
 			margin-top: 60px;
+			@media (max-width: 992px) {
+				margin-top: 30px;
+			}
 		}
 	}
 
@@ -35,6 +54,12 @@
 		max-width: 420px;
 		& + * {
 			margin-top: 80px;
+			@media (max-width: 992px) {
+				margin-top: 40px;
+			}
+		}
+		@media (max-width: 992px) {
+			max-width: 100%;
 		}
 	}
 
@@ -49,6 +74,12 @@
 
 	&__column {
 		max-width: 630px;
+		@media (max-width: 1090px) {
+			max-width: 45%;
+		}
+		@media (max-width: 992px) {
+			max-width: 100%;
+		}
 	}
 
 	&__slider {
@@ -59,6 +90,9 @@
 			position: absolute;
 			right: 0;
 			top: 52px;
+			@media (max-width: 768px) {
+				top: 15px;
+			}
 			li {
 				font-size: 0; //чтобы пропали цифры
 				background: #131313;
@@ -83,6 +117,10 @@
 	&__specs {
 		display: flex;
 		justify-content: space-around;
+		max-width: 100%;
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
 	}
 }
 .first-slider {
@@ -96,6 +134,9 @@
 	&__item {
 		min-width: 160px;
 		text-align: center;
+		@media (max-width: 1090px) {
+			min-width: 100px;
+		}
 	}
 
 	&__title {

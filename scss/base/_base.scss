@@ -1,6 +1,7 @@
 /*--- Base Styles ---*/
 html,
 body {
+	scroll-behavior: smooth;
 	height: 100%;
 }
 body {
@@ -45,6 +46,9 @@ body {
 }
 
 /*--- Elements ---*/
+.no-scroll {
+	overflow: hidden;
+}
 .--ibg {
 	position: relative;
 	img {
@@ -76,5 +80,9 @@ body {
 	transition: all 0.3s;
 	&:hover {
 		background: #ff4040;
+	}
+	@media (max-width: 768px) {
+		padding: 25px;
+		padding-right: 15px;
 	}
 }

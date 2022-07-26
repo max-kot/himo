@@ -2,6 +2,9 @@
 	margin-bottom: 50px;
 	&__body {
 		margin-left: 50px;
+		@media (max-width: 992px) {
+			margin-left: 15px;
+		}
 	}
 
 	&__slider {
@@ -15,6 +18,9 @@
 		position: absolute;
 		left: -50px;
 		top: 0;
+		@media (max-width: 992px) {
+			left: -15px;
+		}
 		li {
 			font-size: 0; //чтобы пропали цифры
 			background: #131313;
@@ -38,6 +44,10 @@
 		height: 632px;
 		width: 100%;
 		position: relative;
+		@media (max-width: 768px) {
+			height: unset;
+			padding-bottom: 30%;
+		}
 		img {
 			position: absolute;
 			top: 0;
